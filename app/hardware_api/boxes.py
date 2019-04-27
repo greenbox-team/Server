@@ -2,8 +2,8 @@ from flask import jsonify
 from . import hardware_api
 
 
-@hardware_api.route('/users/', methods=['GET'])
-def synchronize_sensors():
+@hardware_api.route('/', methods=['GET'])
+def get_state():
     """
         Testing
     """

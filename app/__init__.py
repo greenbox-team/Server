@@ -1,9 +1,10 @@
 from flask import Flask
-from flask_restplus import Api
+from flask_marshmallow import Marshmallow
 from flask_sqlalchemy import SQLAlchemy
 from config import config
 
 db = SQLAlchemy()
+ma = Marshmallow()
 
 
 def create_app(config_name):
