@@ -8,7 +8,10 @@ __pycache__/
 
 # Pycharm
 .idea/
- 
+
+#SQLAlchemy
+migrations/
+
 # Distribution / packaging
 .Python
 build/
