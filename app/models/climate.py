@@ -5,7 +5,7 @@ class Climate(db.Model):
     __tablename__ = 'climate'
     id = db.Column(db.Integer, primary_key=True)
     start_date = db.Column(db.Date, nullable=False)
-    end_date = db.Column(db.Date)
+    end_date = db.Column(db.Date, nullable=False)
     temperature = db.Column(db.Integer, nullable=False)
     humidity = db.Column(db.Integer, nullable=False)
     light = db.Column(db.Integer, nullable=False)

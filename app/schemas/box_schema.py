@@ -1,6 +1,5 @@
 from .. import ma
-from marshmallow import Schema, fields, post_load, validate
-from ..models import Box
+from marshmallow import fields, validate
 
 
 class BoxSchema(ma.Schema):
