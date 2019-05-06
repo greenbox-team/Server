@@ -1,3 +1,4 @@
+alembic==1.0.9
 aniso8601==6.0.0
 attrs==19.1.0
 certifi==2019.3.9
@@ -5,6 +6,7 @@ chardet==3.0.4
 Click==7.0
 Flask==1.0.2
 flask-marshmallow==0.10.0
+Flask-Migrate==2.4.0
 Flask-MySQL==1.4.0
 flask-restplus==0.12.1
 Flask-SQLAlchemy==2.3.2
@@ -13,12 +15,14 @@ idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10
 jsonschema==3.0.1
+Mako==1.0.9
 MarkupSafe==1.1.1
 marshmallow==3.0.0rc5
 marshmallow-sqlalchemy==0.16.2
 PyMySQL==0.9.3
 pyrsistent==0.14.11
 python-dateutil==2.7.5
+python-editor==1.0.4
 pytz==2019.1
 requests==2.21.0
 six==1.12.0

@@ -13,16 +13,18 @@ class Config:
 class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
-        'mysql+pymysql://root:password@localhost/GB'
+        'mysql+pymysql://root:password@localhost/GBA'
+
 
 class TestingConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or \
         'mysql+pymysql://root:password@localhost/GreenBoxDB'
 
-class ProductionConfig(Config):
-    pass
 
+class ProductionConfig(Config):
+    SQLALCHEMY_DATABASE_URI = os.environ.get('PROD_DATABASE_URL') or \
+        'mysql+pymysql://root:password@localhost/GBA'
 
 config = {
     'development': DevelopmentConfig,

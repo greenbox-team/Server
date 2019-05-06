@@ -12,8 +12,6 @@ boxes_schema = BoxSchema(many=True)
 @management_api.route('/boxes', methods=['POST'])
 def add_box():
     json_data = request.get_json(force=True)
-    if not json_data:
-        return 400
 
     try:
         data = box_schema.load(json_data)
